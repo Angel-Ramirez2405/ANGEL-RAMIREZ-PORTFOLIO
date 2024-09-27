@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Rockwell";
+  src: url("../fonts/ROCK.TTF");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rockwell";
+  src: url("../fonts/ROCKB.TTF");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Rockwell";
+  src: url("../fonts/ROCKBI.TTF");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Rockwell";
+  src: url("../fonts/ROCKI.TTF");
+  font-style: italic;
+}
+:root {
+  --color-black: #000000;
+  --color-dark-blue: #033D6D;
+  --color-gris-oscuro: #2D2D2D;
+  --color-papel: #4A4A48;
+  --color-blanco: #FFFFFF;
+  --color-pastel-rosa: #D9ADA3;
+  --color-antique-brass: #CC9186;
+  --color-blue: #35A3B6;
+}
+
+body {
+  background-image: url("../img/fondo.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-blanco);
+  font-family: "Rockwell", Arial, sans-serif;
+  font-size: 18px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+.content {
+  padding-top: 5rem;
+}
+
+.navbar {
+  background-color: var(--color-blanco);
+  min-height: 50px;
+}
+.navbar-nav .nav-item {
+  font-weight: bold;
+  font-style: normal;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.text-body-secondary {
+  color: var(--color-blanco) !important;
+}
+
+.bordered {
+  background-color: var(--color-dark-blue);
+  padding: 0.5rem;
+}
+
+.character,
+.cardboard {
+  background-repeat: no-repeat;
+  min-height: 25rem;
+}
+
+.character {
+  background-size: contain;
+  background-position-x: right;
+  background-image: url("../img/personaje.png");
+}
+
+.cardboard {
+  background-size: 100% 100%;
+  background-image: url("../img/tablero.png");
+  color: var(--color-black);
+}
+
+.bigger-text {
+  font-size: 1.5rem;
+}
+
+.vertical.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.vertical.carousel .carousel-indicators {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.vertical.carousel .carousel-inner {
+  width: 95%;
+}
+.vertical.carousel .carousel-control-prev,
+.vertical.carousel .carousel-control-next {
+  width: auto;
+  opacity: 1;
+  font-weight: bold;
+}
+.vertical.carousel .carousel-control-next {
+  right: auto;
+  top: 25%;
+}
